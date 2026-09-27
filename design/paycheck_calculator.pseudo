@@ -1,4 +1,4 @@
-START paycheck_calculator
+START pay_calculator
 
 GET hours_worked
 
@@ -6,11 +6,11 @@ IF hours_worked > 40
 LET regular_pay = 40 * 20
 LET overtime_hours = hours_worked - 40
 LET overtime_pay = overtime_hours * 30
-LET weekly_paycheck = regular_pay + overtime_pay
+LET weekly_pay = regular_pay + overtime_pay
 ELSE
-LET weekly_paycheck = hours_worked * 20
+LET weekly_pay = hours_worked * 20
 ENDIF
 
-PUT weekly_paycheck
+PUT weekly_pay
 
-END paycheck_calculato
+END pay_calculator
